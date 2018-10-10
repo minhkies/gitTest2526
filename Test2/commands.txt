@@ -1,0 +1,56 @@
+Last login: Wed Oct 10 12:31:20 on ttys000
+SE14L0120-18:~ a01003760$ cd ~/Desktop
+SE14L0120-18:Desktop a01003760$ mkdir Test2
+SE14L0120-18:Desktop a01003760$ touch Test2/commands.txt
+SE14L0120-18:Desktop a01003760$ git clone https://github.com/minhkies/gitTest2526.git
+Cloning into 'gitTest2526'...
+warning: You appear to have cloned an empty repository.
+SE14L0120-18:Desktop a01003760$ mv Test2 gitTest2526
+SE14L0120-18:Desktop a01003760$ cd gitTest2526
+SE14L0120-18:gitTest2526 a01003760$ git add .
+SE14L0120-18:gitTest2526 a01003760$ git commit -m "1st Commit"
+[master (root-commit) 34ba05a] 1st Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Test2/commands.txt
+SE14L0120-18:gitTest2526 a01003760$ git push -u origin master
+Counting objects: 4, done.
+Writing objects: 100% (4/4), 256 bytes | 256.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/minhkies/gitTest2526/pull/new/master
+remote: 
+To https://github.com/minhkies/gitTest2526.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+SE14L0120-18:gitTest2526 a01003760$ nano repo.txt
+SE14L0120-18:gitTest2526 a01003760$ git add repo.txt
+SE14L0120-18:gitTest2526 a01003760$ git commit -m "2nd Commit"
+[master 66b2d3e] 2nd Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 repo.txt
+SE14L0120-18:gitTest2526 a01003760$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/minhkies/gitTest2526.git
+   34ba05a..66b2d3e  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+SE14L0120-18:gitTest2526 a01003760$ nano index.html
+SE14L0120-18:gitTest2526 a01003760$ git add index.html
+SE14L0120-18:gitTest2526 a01003760$ git commit -m "3rd Commit"
+[master d419d3f] 3rd Commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 index.html
+SE14L0120-18:gitTest2526 a01003760$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 326 bytes | 326.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/minhkies/gitTest2526.git
+   66b2d3e..d419d3f  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+SE14L0120-18:gitTest2526 a01003760$ 
